@@ -19,12 +19,13 @@ public class GameRunner implements ActionListener {
     }
 
     protected void onPreRender(){
-
+        SnakeGame.getInstance().getAPI().onRender(0);
     }
 
     protected void onPostRender(){
-        fpsCounter.frame();
 
+        fpsCounter.frame();
+        SnakeGame.getInstance().getAPI().onRender(1);
     }
 
     protected String getFPS(){

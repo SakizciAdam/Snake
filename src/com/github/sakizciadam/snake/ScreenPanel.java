@@ -13,6 +13,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
+import java.util.Random;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
@@ -88,6 +89,7 @@ public class ScreenPanel extends JPanel implements ActionListener {
         super.paintComponent(g);
         gameRunner.onPreRender();
         doDrawing(g);
+        SnakeGame.getAPI().onPaint(g);
         gameRunner.onPostRender();
         fps(g);
 
@@ -173,7 +175,7 @@ public class ScreenPanel extends JPanel implements ActionListener {
     }
 
     private void shift() {
-
+        SnakeGame.getAPI().onMove(0,x,y);
         for (int z = parts; z > 0; z--) {
             x[z] = x[(z - 1)];
             y[z] = y[(z - 1)];
@@ -194,6 +196,7 @@ public class ScreenPanel extends JPanel implements ActionListener {
         if (downDirection) {
             y[0] += DOT_ICON_SIZE;
         }
+        SnakeGame.getAPI().onMove(1,x,y);
     }
 
     public void findCollision() {
@@ -243,6 +246,39 @@ public class ScreenPanel extends JPanel implements ActionListener {
             shift();
         }
 
+
+    }
+
+    protected void down(){
+        if(upDirection)
+            return;
+        downDirection = true;
+        rightDirection = false;
+        leftDirection = false;
+    }
+
+    protected void up(){
+        if(downDirection)
+            return;
+        upDirection = true;
+        rightDirection = false;
+        leftDirection = false;
+    }
+
+    protected void right(){
+        if(leftDirection)
+            return;
+        rightDirection = true;
+        upDirection = false;
+        downDirection = false;
+    }
+
+    protected void left(){
+        if(rightDirection)
+            return;
+        leftDirection = true;
+        upDirection = false;
+        downDirection = false;
     }
 
     private class GameKeyAdapter extends KeyAdapter {
@@ -252,30 +288,22 @@ public class ScreenPanel extends JPanel implements ActionListener {
 
             int key = event.getKeyCode();
 
-            if ((key == KeyEvent.VK_LEFT) && (!rightDirection)) {
-                leftDirection = true;
-                upDirection = false;
-                downDirection = false;
+            if (key == KeyEvent.VK_LEFT) {
+                left();
             }
 
-            if ((key == KeyEvent.VK_RIGHT) && (!leftDirection)) {
-                rightDirection = true;
-                upDirection = false;
-                downDirection = false;
+            if (key == KeyEvent.VK_RIGHT) {
+                right();
             }
 
-            if ((key == KeyEvent.VK_UP) && (!downDirection)) {
-                upDirection = true;
-                rightDirection = false;
-                leftDirection = false;
+            if (key == KeyEvent.VK_UP) {
+                up();
             }
 
-            if ((key == KeyEvent.VK_DOWN) && (!upDirection)) {
-                downDirection = true;
-                rightDirection = false;
-                leftDirection = false;
+            if (key == KeyEvent.VK_DOWN) {
+                down();
             }
-            if((key==KeyEvent.VK_ENTER)&&(!inSnakeGame)){
+            if(key==KeyEvent.VK_ENTER){
                 initSnakeGame();
             }
         }

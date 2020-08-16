@@ -1,16 +1,19 @@
 package com.github.sakizciadam.snake;
 
+import com.github.sakizciadam.snake.api.API;
+import com.github.sakizciadam.snake.api.APIManager;
+import com.github.sakizciadam.snake.utils.FPSCounter;
+
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.List;
 import javax.swing.JFrame;
 
 public class SnakeGame extends JFrame {
 
-    private FPSCounter  fpsCounter;
+    private FPSCounter fpsCounter;
     private static SnakeGame INSTANCE;
     private static API api;
     private ScreenPanel screenPanel;
+    private static APIManager apiManager;
 
     public SnakeGame() {
         INSTANCE=this;
@@ -18,8 +21,8 @@ public class SnakeGame extends JFrame {
     }
     
     private void initScreen() {
-        api=new API(this);
         screenPanel=new ScreenPanel();
+        apiManager=new APIManager();
         add(screenPanel);
                
         setResizable(false);
@@ -28,6 +31,7 @@ public class SnakeGame extends JFrame {
         setTitle("Snake");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
     }
 
     public static void main(String[] args) {
@@ -42,12 +46,13 @@ public class SnakeGame extends JFrame {
         return INSTANCE;
     }
 
-    public static API getAPI(){
-        return api.getAPI();
-    }
 
     protected ScreenPanel getPanel(){
         return screenPanel;
+    }
+
+    protected APIManager getApiManager(){
+        return apiManager;
     }
 
 

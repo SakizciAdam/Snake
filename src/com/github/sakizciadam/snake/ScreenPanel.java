@@ -1,20 +1,18 @@
 package com.github.sakizciadam.snake;
 
+import com.github.sakizciadam.snake.api.API;
+import com.github.sakizciadam.snake.api.data.EnumStage;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
-import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.IOException;
-import java.util.Random;
-import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
@@ -87,11 +85,15 @@ public class ScreenPanel extends JPanel implements ActionListener {
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        gameRunner.onPreRender();
+        for(API api : SnakeGame.getInstance().getApiManager().getAPI()){
+            api.onRender(EnumStage.PRE,g);
+        }
         doDrawing(g);
-        SnakeGame.getAPI().onPaint(g);
-        gameRunner.onPostRender();
+        gameRunner.frame();
         fps(g);
+        for(API api : SnakeGame.getInstance().getApiManager().getAPI()){
+            api.onRender(EnumStage.POST,g);
+        }
 
     }
     
@@ -175,7 +177,10 @@ public class ScreenPanel extends JPanel implements ActionListener {
     }
 
     private void shift() {
-        SnakeGame.getAPI().onMove(0,x,y);
+        for(API api : SnakeGame.getInstance().getApiManager().getAPI()){
+            api.onMove(EnumStage.PRE,x,y);
+        }
+
         for (int z = parts; z > 0; z--) {
             x[z] = x[(z - 1)];
             y[z] = y[(z - 1)];
@@ -196,7 +201,9 @@ public class ScreenPanel extends JPanel implements ActionListener {
         if (downDirection) {
             y[0] += DOT_ICON_SIZE;
         }
-        SnakeGame.getAPI().onMove(1,x,y);
+        for(API api : SnakeGame.getInstance().getApiManager().getAPI()){
+            api.onMove(EnumStage.POST,x,y);
+        }
     }
 
     public void findCollision() {

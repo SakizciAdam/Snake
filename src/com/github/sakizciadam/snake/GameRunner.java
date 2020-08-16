@@ -1,5 +1,9 @@
 package com.github.sakizciadam.snake;
 
+import com.github.sakizciadam.snake.api.API;
+import com.github.sakizciadam.snake.api.data.EnumStage;
+import com.github.sakizciadam.snake.utils.FPSCounter;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,14 +22,10 @@ public class GameRunner implements ActionListener {
         fpsCounter.start();
     }
 
-    protected void onPreRender(){
-        SnakeGame.getInstance().getAPI().onRender(0);
-    }
-
-    protected void onPostRender(){
+    protected void frame(){
 
         fpsCounter.frame();
-        SnakeGame.getInstance().getAPI().onRender(1);
+
     }
 
     protected String getFPS(){

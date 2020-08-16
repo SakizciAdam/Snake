@@ -1,4 +1,4 @@
-package com.github.sakizciadam.snake;
+package com.github.sakizciadam.snake.utils;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -13,8 +13,10 @@ public class GameRunner implements ActionListener {
     public Timer timer;
     private ScreenPanel panel;
     private FPSCounter fpsCounter;
+    private int tick;
 
     public GameRunner(){
+        tick=0;
         panel=ScreenPanel.getInstance();
         timer = new Timer(0,this);
         timer.start();
@@ -39,14 +41,20 @@ public class GameRunner implements ActionListener {
 
     @Override
     public void actionPerformed(final ActionEvent e) {
+        final boolean debug = SnakeGame.getInstance().isGameRunningOnDebugMode();
         if (panel.isGameRunning()) {
-
             panel.findAppleIcon();
             panel.findCollision();
+            for(API api : SnakeGame.getInstance().getApiManager().getAPI()){
+                api.onGameRunning();
+            }
 
         }
-
         panel.repaint();
+        tick++;
+        for(API api : SnakeGame.getInstance().getApiManager().getAPI()){
+            api.onTick(tick);
+        }
     }
 
 

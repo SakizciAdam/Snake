@@ -14,6 +14,7 @@ public class APIManager {
     }
 
     private void registerAPIs(){
+
         add(new TestAPI());
     }
 

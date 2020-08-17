@@ -7,14 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e27df192-7f7b-4065-80b1-ecb941a78634" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/API.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/GameRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/GameRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/ScreenPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/ScreenPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/SnakeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/SnakeGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/api/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/api/API.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/api/APIManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/api/APIManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/api/impl/TestAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/sakizciadam/snake/api/impl/TestAPI.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,135 +23,16 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/ScreenPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="191" column="26" lean-forward="true" selection-start-line="191" selection-start-column="26" selection-end-line="191" selection-end-column="26" />
-              <folding>
-                <element signature="e#7261#7262#0" expanded="true" />
-                <element signature="e#7204#7205#0" expanded="true" />
-                <element signature="e#7238#7239#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Snake.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/FPSCounter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#300#301#0" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/GameRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-              <folding>
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/SnakeGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="707">
-              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#834#835#0" expanded="true" />
-                <element signature="e#948#949#0" expanded="true" />
-                <element signature="e#974#975#0" expanded="true" />
-                <element signature="e#1100#1101#0" expanded="true" />
-                <element signature="e#1133#1134#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/API.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#298#299#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>shift</find>
-      <find>@Override</find>
-      <find>fps</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/Snake.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/Game.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/BoardComponent.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/RoomWall.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/AppleElement.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/SnakeElement.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/Board.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/Manager.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/events/PreRenderEvent.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/events/PostRenderEvent.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/FPSCounter.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/SnakeGame.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/GameRunner.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/API.java" />
-        <option value="$PROJECT_DIR$/src/com/github/sakizciadam/snake/ScreenPanel.java" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="240" />
@@ -159,57 +40,18 @@
     <option name="width" value="1440" />
     <option name="height" value="780" />
   </component>
+  <component name="ProjectId" id="1gDp8ccBElSHfBdL75iZDsL0Yjo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snake" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="snake" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Snake" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Snake" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -217,18 +59,6 @@
       <recent name="C:\Users\User\Documents\Plugins\Snake\src\com\github\sakizciadam\snake" />
       <recent name="C:\Users\User\Documents\Plugins\Snake" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Default" type="Application" factoryName="Application">
@@ -239,6 +69,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -252,157 +83,23 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24427083" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32169312" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32910052" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/Snake.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/Game.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/package-info.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/RoomWall.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/SnakeElement.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/BoardComponent.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/Board.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/AppleElement.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/Manager.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/darkmagician6/eventapi/EventAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/events/PostRenderEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/events/PreRenderEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/darkmagician6/eventapi/types/EventType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/darkmagician6/eventapi/EventManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1411">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Snake.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/SnakeGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/FPSCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/GameRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-          <folding>
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/API.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/sakizciadam/snake/ScreenPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="191" column="26" lean-forward="true" selection-start-line="191" selection-start-column="26" selection-end-line="191" selection-end-column="26" />
-          <folding>
-            <element signature="e#7261#7262#0" expanded="true" />
-            <element signature="e#7204#7205#0" expanded="true" />
-            <element signature="e#7238#7239#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1597667879720">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597667879720" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1597667879720">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597667879720" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1597667879720">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597667879720" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1597667879720">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597667879720" />
   </component>
   <component name="masterDetails">
     <states>

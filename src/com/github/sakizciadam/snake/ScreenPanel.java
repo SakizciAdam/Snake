@@ -47,7 +47,7 @@ public class ScreenPanel extends JPanel implements ActionListener {
 
     private GameRunner gameRunner;
 
-    public ScreenPanel() {
+    protected ScreenPanel() {
         
         initScreenPanel();
     }
@@ -212,23 +212,38 @@ public class ScreenPanel extends JPanel implements ActionListener {
 
             if ((z > 4) && (x[0] == x[z]) && (y[0] == y[z])) {
                 inSnakeGame = false;
+                for(API api : SnakeGame.getInstance().getApiManager().getAPI()){
+                    api.onDeath();
+                }
             }
         }
 
         if (y[0] >= SCREEN_HEIGHT) {
             inSnakeGame = false;
+            for(API api : SnakeGame.getInstance().getApiManager().getAPI()){
+                api.onDeath();
+            }
         }
 
         if (y[0] < 0) {
             inSnakeGame = false;
+            for(API api : SnakeGame.getInstance().getApiManager().getAPI()){
+                api.onDeath();
+            }
         }
 
         if (x[0] >= SCREEN_WIDTH) {
             inSnakeGame = false;
+            for(API api : SnakeGame.getInstance().getApiManager().getAPI()){
+                api.onDeath();
+            }
         }
 
         if (x[0] < 0) {
             inSnakeGame = false;
+            for(API api : SnakeGame.getInstance().getApiManager().getAPI()){
+                api.onDeath();
+            }
         }
         
         if (!inSnakeGame) {
@@ -249,7 +264,6 @@ public class ScreenPanel extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent event) {
 
         if (inSnakeGame) {
-
             shift();
         }
 
@@ -291,9 +305,26 @@ public class ScreenPanel extends JPanel implements ActionListener {
     private class GameKeyAdapter extends KeyAdapter {
 
         @Override
+        public void keyReleased(KeyEvent event) {
+            final int key = event.getKeyCode();
+            if(SnakeGame.getInstance().isGameRunningOnDebugMode()){
+
+                SnakeGame.getInstance().info("Pressed "+KeyEvent.getKeyText(key));
+            }
+            if(key==KeyEvent.VK_ENTER){
+                if(SnakeGame.getInstance().isGameRunningOnDebugMode()){
+                    SnakeGame.getInstance().info("Restarting the game...");
+                }
+                timer.stop();
+                initSnakeGame();
+
+            }
+        }
+
+        @Override
         public void keyPressed(KeyEvent event) {
 
-            int key = event.getKeyCode();
+            final int key = event.getKeyCode();
 
             if (key == KeyEvent.VK_LEFT) {
                 left();
@@ -310,9 +341,7 @@ public class ScreenPanel extends JPanel implements ActionListener {
             if (key == KeyEvent.VK_DOWN) {
                 down();
             }
-            if(key==KeyEvent.VK_ENTER){
-                initSnakeGame();
-            }
+
         }
     }
 
